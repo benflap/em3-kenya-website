@@ -5,7 +5,15 @@ const Home = ({ data }) => (
     <div>
         <h1>Hello world</h1>
         {data.allStrapiRestaurant.edges.map(({ node }) => (
-            <h2 key={node.strapiId}>{node.name}</h2>
+            <div key={node.strapiId}>
+                <img
+                    src={`http://localhost:1337${node.cover.url}`}
+                    alt=""
+                    style={{ maxWidth: "50%" }}
+                />
+
+                <h2 style={{ marginTop: 0 }}>{node.name}</h2>
+            </div>
         ))}
     </div>
 );
@@ -24,6 +32,9 @@ export const query = graphql`
                     category {
                         id
                         name
+                    }
+                    cover {
+                        url
                     }
                 }
             }
