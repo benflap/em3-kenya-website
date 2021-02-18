@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "missions",
+  "info": {
+    "name": "Mission"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Text": {
+      "type": "richtext"
+    },
+    "Photos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
