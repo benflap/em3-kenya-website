@@ -1,20 +1,23 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../components/layout";
 
-const Home = ({ data }) => {
-    const { html: __html } = data.strapiHomePage.fields;
-
-    return <div dangerouslySetInnerHTML={{ __html }} />;
-};
+const Home = ({
+    data: {
+        ghostPage: { html: __html },
+    },
+}) => (
+    <Layout pages={[{ path: "/", name: "Home" }]}>
+        <div dangerouslySetInnerHTML={{ __html }} />
+    </Layout>
+);
 
 export default Home;
 
 export const query = graphql`
-    query MyQuery {
-        strapiHomePage {
-            fields {
-                html
-            }
+    query {
+        ghostPage(title: { eq: "Home" }) {
+            html
         }
     }
 `;
