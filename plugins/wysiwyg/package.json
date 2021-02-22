@@ -1,0 +1,16 @@
+{
+    "name": "strapi-plugin-wysiwyg",
+    "version": "0.0.0",
+    "description": "CKEditor WYSIWYG plugin",
+    "strapi": {
+        "name": "wysiwyg",
+        "icon": "plug",
+        "description": "CKEditor WYSIWYG plugin"
+    },
+    "dependencies": {},
+    "engines": {
+        "node": ">=10.16.0 <=14.x.x",
+        "npm": ">=6.0.0"
+    },
+    "license": "MIT"
+}

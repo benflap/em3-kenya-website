@@ -1,10 +1,11 @@
 {
-    "name": "cms",
+    "name": "em3-kenya-cms",
     "private": true,
     "version": "0.1.0",
     "description": "A Strapi application",
     "scripts": {
         "develop": "strapi develop",
+        "dev": "strapi develop",
         "start": "strapi start",
         "build": "strapi build",
         "strapi": "strapi"
@@ -26,7 +27,7 @@
         "strapi-utils": "3.5.0"
     },
     "author": {
-        "name": "A Strapi developer"
+        "name": "Ben Lapp"
     },
     "strapi": {
         "uuid": "c43156dc-27fb-4178-9f6a-19dca57db1ff"
