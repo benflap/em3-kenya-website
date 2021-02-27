@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "dependencies": {
+        "axist": "0.0.4",
         "gatsby": "^2.31.1",
         "gatsby-source-strapi": "^1.0.0-alpha.0",
         "react": "^17.0.1",

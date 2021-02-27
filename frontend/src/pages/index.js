@@ -1,10 +1,15 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../components/layout";
 
 const Home = ({ data }) => {
     const { text: __html } = data.strapiHomePage;
 
-    return <div dangerouslySetInnerHTML={{ __html }} />;
+    return (
+        <Layout>
+            <div dangerouslySetInnerHTML={{ __html }} />
+        </Layout>
+    );
 };
 
 export default Home;
