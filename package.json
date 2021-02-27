@@ -1,0 +1,26 @@
+{
+    "name": "em3-frontend",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "gatsby": "^2.31.1",
+        "gatsby-source-ghost": "^4.2.3",
+        "prop-types": "^15.7.2",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    },
+    "devDependencies": {
+        "prettier": "^2.2.1"
+    },
+    "scripts": {
+        "dev": "gatsby develop"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "semi": true
+    },
+    "keywords": [],
+    "author": "Ben Lapp",
+    "license": "MIT"
+}
