@@ -1,11 +1,20 @@
 module.exports = {
     plugins: [
         {
-            resolve: `gatsby-source-ghost`,
+            resolve: "gatsby-source-strapi",
             options: {
-                apiUrl: `http://localhost:2368`,
-                contentApiKey: `9d19120b14588691268e275b41`,
-                version: `v3`,
+                apiURL: "http://localhost:1337",
+                contentTypes: [
+                    {
+                        name: "mission",
+                        endpoint: "mission",
+                    },
+                    {
+                        name: `home-page`,
+                        endpoint: `home-page`,
+                    },
+                ],
+                queryLimit: 1000,
             },
         },
     ],
