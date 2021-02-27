@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 const Home = ({ data }) => {
-    const { html: __html } = data.strapiHomePage.fields;
+    const { text: __html } = data.strapiHomePage;
 
     return <div dangerouslySetInnerHTML={{ __html }} />;
 };
@@ -10,11 +10,11 @@ const Home = ({ data }) => {
 export default Home;
 
 export const query = graphql`
-    query MyQuery {
+    query HomePage {
         strapiHomePage {
-            fields {
-                html
-            }
+            Title
+            Subtitle
+            text
         }
     }
 `;

@@ -1,26 +1,30 @@
 {
-  "kind": "singleType",
-  "collectionName": "missions",
-  "info": {
-    "name": "Mission"
-  },
-  "options": {
-    "increments": true,
-    "timestamps": true,
-    "draftAndPublish": true
-  },
-  "attributes": {
-    "Text": {
-      "type": "richtext"
+    "kind": "singleType",
+    "collectionName": "missions",
+    "info": {
+        "name": "Mission"
     },
-    "Photos": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
+    "options": {
+        "increments": true,
+        "timestamps": true,
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "Title": {
+            "type": "string"
+        },
+        "Subtitle": {
+            "type": "text"
+        },
+        "title_image": {
+            "model": "file",
+            "via": "related",
+            "allowedTypes": ["images"],
+            "plugin": "upload",
+            "required": false
+        },
+        "text": {
+            "type": "richtext"
+        }
     }
-  }
 }

@@ -1,36 +1,38 @@
 {
-  "kind": "singleType",
-  "collectionName": "home_pages",
-  "info": {
-    "name": "Home Page",
-    "description": ""
-  },
-  "options": {
-    "increments": true,
-    "timestamps": true,
-    "draftAndPublish": true
-  },
-  "attributes": {
-    "text": {
-      "type": "richtext"
+    "kind": "singleType",
+    "collectionName": "home_pages",
+    "info": {
+        "name": "Home Page",
+        "description": "The Home page"
     },
-    "carousel_photos": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
+    "options": {
+        "increments": true,
+        "timestamps": true,
+        "draftAndPublish": true
     },
-    "title_image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
+    "attributes": {
+        "text": {
+            "type": "richtext"
+        },
+        "carousel_photos": {
+            "collection": "file",
+            "via": "related",
+            "allowedTypes": ["images"],
+            "plugin": "upload",
+            "required": false
+        },
+        "title_image": {
+            "model": "file",
+            "via": "related",
+            "allowedTypes": ["images"],
+            "plugin": "upload",
+            "required": false
+        },
+        "Title": {
+            "type": "string"
+        },
+        "Subtitle": {
+            "type": "text"
+        }
     }
-  }
 }
