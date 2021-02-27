@@ -1,3 +1,3 @@
-# Strapi application
+# EM3 Kenya
 
-A quick description of your strapi application
+This project is built with Gatsby for the frontend static site generation and strapi for the cms
