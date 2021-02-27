@@ -1,0 +1,17 @@
+{
+    "name": "em3-kenya-website",
+    "version": "1.0.0",
+    "description": "EM3 Kenya Website",
+    "main": "",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/benflap/em3-kenya-website.git"
+    },
+    "author": "Ben Lapp",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/benflap/em3-kenya-website/issues"
+    },
+    "homepage": "https://github.com/benflap/em3-kenya-website#readme"
+}
