@@ -3,9 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 
 const BlogPage = ({ data }) => {
-    console.log(data);
     const blogPosts = data.allStrapiBlog.edges;
-    console.log(blogPosts);
     return (
         <Layout>
             {blogPosts.map(({ node: { published_at, Title, id } }) => {
