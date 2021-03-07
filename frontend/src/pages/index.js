@@ -3,10 +3,12 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 
 const Home = ({ data }) => {
-    const { text: __html } = data.strapiHomePage;
+    const { text: __html, Title, Subtitle } = data.strapiHomePage;
 
     return (
         <Layout>
+            <h1>{Title}</h1>
+            <h3 className="subtitle">{Subtitle}</h3>
             <div dangerouslySetInnerHTML={{ __html }} />
         </Layout>
     );
