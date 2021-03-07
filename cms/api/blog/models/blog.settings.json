@@ -1,21 +1,21 @@
 {
-  "kind": "collectionType",
-  "collectionName": "blogs",
-  "info": {
-    "name": "Blog",
-    "description": ""
-  },
-  "options": {
-    "increments": true,
-    "timestamps": true,
-    "draftAndPublish": true
-  },
-  "attributes": {
-    "Title": {
-      "type": "string"
+    "kind": "collectionType",
+    "collectionName": "blog-posts",
+    "info": {
+        "name": "Blog_post",
+        "description": ""
     },
-    "Text": {
-      "type": "richtext"
+    "options": {
+        "increments": true,
+        "timestamps": true,
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "Title": {
+            "type": "string"
+        },
+        "Text": {
+            "type": "richtext"
+        }
     }
-  }
 }
