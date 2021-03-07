@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <header>
-                <nav role="navitgation">
+                <nav role="navigation">
                     <Link to="/">Home</Link>
                     <Link to="/mission">Mission</Link>
                     <Link to="/projects">Projects</Link>
