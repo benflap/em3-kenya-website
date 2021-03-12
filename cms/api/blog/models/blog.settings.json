@@ -16,6 +16,16 @@
         },
         "Text": {
             "type": "richtext"
+        },
+        "title_image": {
+            "model": "file",
+            "via": "related",
+            "allowedTypes": ["images", "files", "videos"],
+            "plugin": "upload",
+            "required": false
+        },
+        "slug": {
+            "type": "string"
         }
     }
 }
