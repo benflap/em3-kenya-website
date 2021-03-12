@@ -3,12 +3,12 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 
 const Home = ({ data }) => {
-    const { text: __html, Title, Subtitle } = data.strapiHomePage;
+    const { text: __html, title, subtitle } = data.strapiHomePage;
 
     return (
         <Layout>
-            <h1>{Title}</h1>
-            <h3 className="subtitle">{Subtitle}</h3>
+            <h1>{title}</h1>
+            <h3 className="subtitle">{subtitle}</h3>
             <div dangerouslySetInnerHTML={{ __html }} />
         </Layout>
     );
@@ -19,8 +19,8 @@ export default Home;
 export const query = graphql`
     query HomePage {
         strapiHomePage {
-            Title
-            Subtitle
+            title
+            subtitle
             text
         }
     }

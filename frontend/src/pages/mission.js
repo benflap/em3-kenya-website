@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 
 const MissionPage = ({ data }) => {
-    const { Text: __html } = data.strapiMission;
+    const { text: __html } = data.strapiMission;
     return (
         <Layout>
             <div dangerouslySetInnerHTML={{ __html }} />
@@ -16,7 +16,7 @@ export default MissionPage;
 export const query = graphql`
     query MyQuery {
         strapiMission {
-            Text
+            text
         }
     }
 `;

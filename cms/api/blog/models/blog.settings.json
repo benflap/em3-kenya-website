@@ -11,10 +11,10 @@
         "draftAndPublish": true
     },
     "attributes": {
-        "Title": {
+        "title": {
             "type": "string"
         },
-        "Text": {
+        "text": {
             "type": "richtext"
         },
         "title_image": {

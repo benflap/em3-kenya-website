@@ -10,10 +10,10 @@
         "draftAndPublish": true
     },
     "attributes": {
-        "Title": {
+        "title": {
             "type": "string"
         },
-        "Subtitle": {
+        "subtitle": {
             "type": "text"
         },
         "title_image": {

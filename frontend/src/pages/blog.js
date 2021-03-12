@@ -6,10 +6,10 @@ const BlogPage = ({ data }) => {
     const blogPosts = data.allStrapiBlog.edges;
     return (
         <Layout>
-            {blogPosts.map(({ node: { published_at, Title, id } }) => {
+            {blogPosts.map(({ node: { published_at, title, id } }) => {
                 return (
                     <article key={id}>
-                        <h2>{Title}</h2>
+                        <h2>{title}</h2>
                         <p>{published_at}</p>
                     </article>
                 );
@@ -26,7 +26,7 @@ export const query = graphql`
             edges {
                 node {
                     published_at
-                    Title
+                    title
                     id
                 }
             }

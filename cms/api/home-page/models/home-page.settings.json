@@ -28,10 +28,10 @@
             "plugin": "upload",
             "required": false
         },
-        "Title": {
+        "title": {
             "type": "string"
         },
-        "Subtitle": {
+        "subtitle": {
             "type": "text"
         }
     }
