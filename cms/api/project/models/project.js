@@ -12,7 +12,7 @@ module.exports = {
         },
         beforeUpdate: async (params, data) => {
             if (true) {
-                data.slug = slugify("hi");
+                data.slug = slugify(data.project_name);
             }
         },
     },
