@@ -1,8 +1,19 @@
-'use strict';
+"use strict";
 
-/**
- * Read the documentation (https://strapi.io/documentation/developer-docs/latest/concepts/models.html#lifecycle-hooks)
- * to customize this model
- */
+const slugify = require("@sindresorhus/slugify");
 
-module.exports = {};
+module.exports = {
+    lifecycles: {
+        beforeCreate: async (data) => {
+            console.log(data);
+            if (data.project_name) {
+                data.slug = slugify(data.project_name);
+            }
+        },
+        beforeUpdate: async (params, data) => {
+            if (true) {
+                data.slug = slugify("hi");
+            }
+        },
+    },
+};
