@@ -1,17 +1,19 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 
 const BlogPage = ({ data }) => {
     const blogPosts = data.allStrapiBlog.edges;
     return (
         <Layout>
-            {blogPosts.map(({ node: { published_at, title, id } }) => {
+            {blogPosts.map(({ node: { published_at, title, id, slug } }) => {
                 return (
-                    <article key={id}>
-                        <h2>{title}</h2>
-                        <p>{published_at}</p>
-                    </article>
+                    <Link to={`/blog/${slug}`}>
+                        <article key={id}>
+                            <h2>{title}</h2>
+                            <p>{published_at}</p>
+                        </article>
+                    </Link>
                 );
             })}
         </Layout>
@@ -28,6 +30,7 @@ export const query = graphql`
                     published_at
                     title
                     id
+                    slug
                 }
             }
         }
