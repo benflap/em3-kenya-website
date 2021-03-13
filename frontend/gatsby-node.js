@@ -10,7 +10,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                     edges {
                         node {
                             id
-                            title
+                            slug
+                        }
+                    }
+                }
+                allStrapiProject {
+                    edges {
+                        node {
+                            id
                             slug
                         }
                     }
@@ -29,6 +36,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         createPage({
             path: `/blog/${slug}`,
             component: blogPostTemplate,
+            context: {
+                id,
+            },
+        });
+    });
+
+    const projectPageTemplate = path.resolve(`src/templates/project.js`);
+    result.data.allStrapiProject.edges.forEach(({ node: { id, slug } }) => {
+        createPage({
+            path: `/project/${slug}`,
+            component: projectPageTemplate,
             context: {
                 id,
             },
