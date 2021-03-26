@@ -1,18 +1,12 @@
 import React from "react";
-import { Link } from "gatsby";
+import Navbar from "./Navbar";
 
-const Layout = ({ children }) => {
+const Layout = (obj) => {
+    console.log(obj);
     return (
         <>
-            <header>
-                <nav role="navigation">
-                    <Link to="/">Home</Link>
-                    <Link to="/mission">Mission</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/blog">Blog</Link>
-                </nav>
-            </header>
-            {children}
+            <Navbar />
+            <main>{obj.children}</main>
         </>
     );
 };
