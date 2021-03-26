@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import "../../node_modules/axist/dist/axist.min.css";
-
 const Layout = ({ children }) => {
     return (
         <>
