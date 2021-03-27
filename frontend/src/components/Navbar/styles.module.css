@@ -12,9 +12,13 @@
     font-size: 1.5rem;
     color: var(--gray-800);
 }
+.navLink:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
 
 .activeNavLink {
-    border-bottom: 4px solid #d4af37;
+    border-bottom: 4px solid var(--secondary);
 }
 
 .hideHamburger {
