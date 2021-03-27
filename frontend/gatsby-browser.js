@@ -1,5 +1,3 @@
-// import "axist/dist/axist.css";
-
 import "@fontsource/cabin/variable.css";
 import "@fontsource/cabin/variable-italic.css";
 
