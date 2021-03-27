@@ -30,7 +30,7 @@
     --gray-500: hsla(60, 4, 55, 1);
     --gray-600: hsla(60, 4, 42, 1);
     --gray-700: hsla(60, 8, 32, 1);
-    --gray-800: hsla(60, 12, 23, 1);
+    --gray-800: hsl(60, 12, 23);
     --gray-900: hsla(60, 25, 7, 1);
     --red-100: hsla(350, 100, 88, 1);
     --red-200: hsla(353, 97, 81, 1);
@@ -46,6 +46,12 @@
     --gold-500: hsla(57, 76, 50, 1);
     --gold-700: hsla(50, 89, 33, 1);
     --gold-900: hsla(44, 100, 21, 1);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 body,

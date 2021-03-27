@@ -18,29 +18,34 @@ const NavLink = (props) => {
 const Navbar = () => {
     const [isMenuOpen, setMenuState] = useState(false);
     return (
-        <header className={styles.header}>
-            <button
-                onClick={() => {
-                    isMenuOpen ? setMenuState(false) : setMenuState(true);
-                }}
-                className={`${styles.hamburger} ${
-                    isMenuOpen ? styles.isActive : ""
-                }`}
-            >
-                <span className={styles.hamburgerBox}>
-                    <span className={styles.hamburgerInner} />
-                </span>
-            </button>
-            <nav
-                role="navigation"
-                className={styles.navbar}
-                style={isMenuOpen ? {} : { display: "none" }}
-            >
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/mission">Mission</NavLink>
-                <NavLink to="/projects">Projects</NavLink>
-                <NavLink to="/blog">Blog</NavLink>
-            </nav>
+        <header
+            className={`${styles.header} ${isMenuOpen ? styles.isActive : ""}`}
+        >
+            <div className={styles.mobileBackground}>
+                <button
+                    onClick={() => {
+                        isMenuOpen ? setMenuState(false) : setMenuState(true);
+                    }}
+                    className={`${styles.hamburger} ${styles.hideHamburger} `}
+                >
+                    <span className={styles.hamburgerBox}>
+                        <span className={styles.hamburgerInner} />
+                    </span>
+                </button>
+                <div className={styles.navContainer}>
+                    <nav
+                        role="navigation"
+                        className={`${styles.navbar} ${
+                            isMenuOpen ? "" : styles.hideNav
+                        }`}
+                    >
+                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/mission">Mission</NavLink>
+                        <NavLink to="/projects">Projects</NavLink>
+                        <NavLink to="/blog">Blog</NavLink>
+                    </nav>
+                </div>
+            </div>
         </header>
     );
 };
