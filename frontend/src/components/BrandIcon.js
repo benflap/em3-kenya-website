@@ -15,7 +15,7 @@ const Logo = styled.span`
 
 const BrandIcon = () => {
     return (
-        <Link>
+        <Link to="/">
             <Logo />
         </Link>
     );
