@@ -15,6 +15,10 @@ html {
 
     margin: 0;
     line-height: 1.5;
+
+    &.no-scroll {
+        overflow-y: hidden;
+    }
 }
 
 main {
@@ -92,7 +96,7 @@ hr {
     border: 0;
     height: 2px;
     margin: 1rem 0;
-    background: var(--light-gray);
+    background: var(--gray-300);
 }
 
 img {
@@ -109,7 +113,7 @@ table {
 th,
 td {
     vertical-align: top;
-    border-bottom: 2px solid var(--light-gray);
+    border-bottom: 2px solid var(--gray-300);
     line-height: 15px;
     padding: 15px;
 }
@@ -117,7 +121,7 @@ td {
 th {
     font-weight: bold;
     text-align: left;
-    color: var(--gray-700);
+    color: var(--gray-900);
 }
 
 ul {
