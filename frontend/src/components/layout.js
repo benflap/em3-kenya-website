@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Header from "./Header";
 
 const Layout = (obj) => {
     console.log(obj);
     return (
         <>
-            <Navbar />
+            <Header />
             <main>{obj.children}</main>
         </>
     );

@@ -11,11 +11,16 @@ const Logo = styled.span`
     background-image: url(${icon});
     background-position: center;
     background-size: cover;
+
+    @media screen and (max-width: 768px) {
+        height: 48px;
+        width: 48px;
+    }
 `;
 
 const BrandIcon = () => {
     return (
-        <Link to="/">
+        <Link to="/" style={{ lineHeight: 0 }}>
             <Logo />
         </Link>
     );

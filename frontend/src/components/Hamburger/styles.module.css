@@ -23,7 +23,7 @@
         overflow: visible;
         outline: none;
         box-sizing: border-box;
-        align-self: flex-end;
+        /* align-self: flex-end; */
     }
 
     .hamburger:hover {
