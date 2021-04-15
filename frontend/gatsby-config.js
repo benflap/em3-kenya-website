@@ -10,5 +10,17 @@ module.exports = {
             },
         },
         "gatsby-plugin-sass",
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `EM3 Kenya`,
+                short_name: `EM3 Kenya`,
+                start_url: `/`,
+                background_color: `#fff`,
+                theme_color: `#D3AC12`,
+                display: `browser`,
+                icon: `src/images/icon.png`,
+            },
+        },
     ],
 };
