@@ -11,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "date": {
-      "type": "date"
-    },
     "description": {
       "type": "richtext"
     },
@@ -21,7 +18,17 @@
       "type": "string"
     },
     "slug": {
-      "type": "string"
+      "type": "string",
+      "unique": true
+    },
+    "title_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
