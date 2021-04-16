@@ -31,7 +31,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         return;
     }
 
-    const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
+    const blogPostTemplate = path.resolve(`src/templates/BlogPost/BlogPost.js`);
     result.data.allStrapiBlog.edges.forEach(({ node: { id, slug } }) => {
         createPage({
             path: `/blog/${slug}`,
