@@ -1,0 +1,23 @@
+.container {
+    margin: 2rem;
+}
+
+.title {
+    margin: 0;
+}
+
+.date {
+    font-weight: 400;
+    color: rgb(70, 70, 70);
+    margin: 0.5rem 0 2rem;
+}
+
+.titleImage {
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 1;
+    }
+}
