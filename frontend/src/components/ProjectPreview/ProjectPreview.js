@@ -10,7 +10,7 @@ const PostPreview = (props) => {
 
     return (
         <article className={styles.postPreview}>
-            <Link to={`/blog/${slug}`} className={styles.link}>
+            <Link to={`/project/${slug}`} className={styles.link}>
                 <GatsbyImage
                     image={gatsbyImage}
                     alt={imageAlt}

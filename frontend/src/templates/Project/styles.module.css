@@ -1,0 +1,17 @@
+.container {
+    margin: 2rem;
+}
+
+.title {
+    margin: 2rem 0;
+}
+
+.titleImage {
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 1;
+    }
+}
